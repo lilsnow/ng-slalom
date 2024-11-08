@@ -1,0 +1,9 @@
+<h2>Product List</h2>
+@for (product of products; track product.id) {
+  <div>
+    <app-product-item
+      [product]="product"
+      (addToCart)="addToCart(product)"
+    ></app-product-item>
+  </div>
+}
